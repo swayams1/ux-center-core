@@ -1,0 +1,40 @@
+{
+  "name": "ux-center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha -r ts-node/register **/*.spec.ts",
+    "start": "ts-node lib/draw.ts"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html"
+    ],
+    "all": true
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/jsdom": "^16.2.1",
+    "@types/mocha": "^7.0.2",
+    "@types/uuid": "^7.0.2",
+    "chai": "^4.2.0",
+    "jsdom": "^16.2.2",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  }
+}
