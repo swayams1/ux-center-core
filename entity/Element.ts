@@ -6,6 +6,19 @@ export interface IAttribute<T> {
 
 export interface IElement {
     name: string
-    type: string
-    children: IElement[]
+    children: IElement[] 
 }
+
+export class Element implements IElement {
+    name: string
+    children: Element[]
+    type: string
+
+    constructor(name: string,  children: Element[], type: string) {
+        this.name = name
+        this.children = children
+        this.type = type
+    }
+}
+
+

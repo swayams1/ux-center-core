@@ -1,27 +1,27 @@
 
-import { ContainerType } from "../entity/Types";
+import { DIV } from "../entity/Types";
 import { IElement } from '../entity/Element';
 
 const text = {
   name: "text",
-  type: ContainerType.div,
+  type: DIV,
   children: [],
 };
 const productName = {
   name: "productName",
-  type: ContainerType.div,
+  type: DIV,
   children: [text],
 };
 
 const productDescription = {
   name: "productType",
-  type: ContainerType.div,
+  type: DIV,
   children: [text],
 };
 
 export const config = {
   name: "product",
-  type: ContainerType.div,
+  type: DIV,
   children: [productName, productDescription],
 };
 
