@@ -15,7 +15,7 @@ export class Flex {
     }
 
     get() {
-        return  ` display: ${this.display}, flex-direction: ${this.direction}, align-items: ${this.align}, justify-content: ${this.justify}`
+        return  ` display: ${this.display}; flex-direction: ${this.direction}; align-items: ${this.align}; justify-content: ${this.justify}`
     }
    
 }
