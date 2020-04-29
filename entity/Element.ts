@@ -1,17 +1,20 @@
-export interface IAttribute<T> {
-    key: string
-    value: T
-}
 
+
+interface IAttribute {
+    name: string,
+    value: string
+}
 
 export interface IElement {
     name: string
     children: IElement[] 
+    attributes: IAttribute[]
 }
 
 export class Element implements IElement {
     name: string
     children: Element[]
+    attributes: IAttribute[]
     type: string
 
     constructor(name: string,  children: Element[], type: string) {
