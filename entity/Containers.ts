@@ -1,4 +1,4 @@
-import { Element, IAttribute } from './Element';
+import { Element } from './Element';
 import { generateElementID } from '../lib/utils';
 import { DIV } from './Types';
 

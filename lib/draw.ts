@@ -1,5 +1,5 @@
 import { config } from "../dataset/config";
-import { IElement } from "../entity/Element";
+import { Element } from "../entity/Element";
 import { JSDOM } from 'jsdom';
 import { Flex } from "../entity/Layouts";
 
@@ -13,15 +13,14 @@ const draw = (element: any, root: HTMLDivElement) => {
   const current = createNode(element);
   root.appendChild(current);
   if (element.children.length > 0)
-    element.children.forEach((child: IElement) => draw(child, current));
+    element.children.forEach((child: Element) => draw(child, current));
 };
 
-const createNode = (element: IElement) => {
+const createNode = (element: Element) => {
   let flex = new Flex('column')
   let elem = document.createElement("div");
   elem.setAttribute("name", element.name);
   elem.setAttribute("style", flex.get())
-  elem.innerHTML = "Test"
   return elem;
 };
 

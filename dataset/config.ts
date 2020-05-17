@@ -1,6 +1,5 @@
 
 import { DIV } from "../entity/Types";
-import { IElement } from '../entity/Element';
 
 const text = {
   name: "text",
@@ -24,4 +23,5 @@ export const config = {
   type: DIV,
   children: [productName, productDescription],
 };
+
 

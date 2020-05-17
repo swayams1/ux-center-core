@@ -5,7 +5,7 @@ interface IAttribute {
     value: string
 }
 
-export interface IElement {
+interface IElement {
     name: string
     children: IElement[] 
     attributes: IAttribute[]
